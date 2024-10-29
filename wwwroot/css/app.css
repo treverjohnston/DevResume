@@ -14,14 +14,16 @@ a, .btn-link {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
-}
+}resu
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .content {
-    padding-top: 1.1rem;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    min-height: 100vh;
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -100,4 +102,97 @@ a, .btn-link {
 
 code {
     color: #c02d76;
+}
+
+
+.gray-background {
+    background-color: #f0f0f0;
+}
+
+.console-body {
+    background-color: #f0f0f0;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /*    font-family: 'Courier New', Courier, monospace;
+*/
+}
+
+.console-container {
+    /*  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;*/
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.console-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 9999px;
+    background-color: transparent;
+    color: black;
+    caret-color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+    .console-input:focus {
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+    }
+
+    .console-input::placeholder {
+        color: black;
+    }
+
+.console-output {
+    margin-top: 20px;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.output-line {
+    margin-bottom: 5px;
+    padding: 15px;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .output-line:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    .output-line span {
+        display: inline-block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.navbar-title {
+    color: white;
+}
+
+.top-row {
+    height: auto !important;
 }
